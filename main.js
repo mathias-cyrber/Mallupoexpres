@@ -1,14 +1,18 @@
-function mostrarImagen(respuesta) {
-    const contenedor = document.getElementById('imagen-container');
-  
-    if (respuesta === 'si') {
-      contenedor.innerHTML = '<img src="imagenes/si.gif" alt="GIF Sí" width="300">';
-    } else if (respuesta === 'no') {
-      contenedor.innerHTML = '<img src="imagenes/no.gif" alt="GIF No" width="300">';
+const searchBar = document.querySelector('.search-bar');
+
+searchBar.addEventListener('keypress', function(event) {
+  if (event.key === 'Enter') { // Detectar la tecla "Enter"
+    const searchTerm = searchBar.value.toLowerCase(); // Obtener el texto y convertirlo a minúsculas
+
+    if (searchTerm === 'gamer') {
+      window.location.href = '#gamer';
+    } else if (searchTerm === 'muebles') {
+      window.location.href = '#muebles';
+    } else if (searchTerm === 'contacto') {
+      window.location.href = '#contacto';
+    } else {
+      alert('No se encontró la sección.'); // Opcional: mostrar un mensaje si no hay coincidencia
     }
   }
+});
 
-  function reiniciar() {
-    const contenedor = document.getElementById('imagen-container');
-    contenedor.innerHTML = ''; // Limpia el contenido
-  }

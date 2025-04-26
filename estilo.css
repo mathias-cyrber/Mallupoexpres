@@ -1,47 +1,172 @@
-body{
-  background: #0F2027;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
-font-family: Arial, sans-serif;
-text-align: center;
-padding: 20px; 
-}
-.meneador{
-  text-align: center;
+/* --- Estilos Generales --- */
+body {
+  background: linear-gradient(to right, #DECBA4, #3E5151);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.botones button {
-    padding: 10px 20px;
-    margin: 10px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  #imagen-container {
-    margin-top: 20px;
-  }
-  
-  #reiniciar {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 12px 20px;
-    background-color: #f44336;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
-  }
-  
-  #reiniciar:hover {
-    background-color: #d32f2f;
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #242323;
+  padding: 0 1rem;
+  position: fixed; /* Añadido: Fijar la posición */
+  top: 0;          /* Añadido: Pegar a la parte superior */
+  left: 0;         /* Añadido: Pegar al lado izquierdo */
+  width: 100%;       /* Añadido: Ocupar todo el ancho */
+  z-index: 100;      /* Añadido: Asegurar que esté encima de otros elementos */
+}
+
+.logo {
+  color: #f0ac45;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #fff;
+}
+
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav ul li {
+  margin: 0 10px;
+  padding: 0 10px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 26px;
+  transition: all ease 0.4s;
+}
+
+.nav ul li a:hover {
+  color: #f0ac45;
+}
+
+.logo1 {
+  width: 70px;
+  height: 70px;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  width: 20rem;
+  padding: 10px 10px 10px 20px;
+  border-radius: 40px;
+  border: none;
+  font-size: 14px;
+  transition: 0.6s all ease-in-out;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.search-bar:focus-visible {
+  outline: none;
+  box-shadow: 0px 0px 6px 6px #fdae36;
+}
+
+.seccion-gamer,
+.seccion-muebles {
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  background-color: #2423237a;
+  display: grid;
+  place-items: start;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-top: 80px; /* Añadido: Espacio para evitar superposición */
+}
+
+.seccion-gamer1,
+.seccion-muebles1 {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  h1, h2, h3 {
+      font-size: 6vw;
   }
 
-  h1 {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
+  .nav ul {
+      flex-direction: column;
+      align-items: center;
   }
 
+  .nav ul li {
+      margin: 10px 0;
+      padding: 5px 0;
+  }
 
+  .nav ul li a {
+      font-size: 20px;
+  }
+
+  .container {
+      width: 95%;
+  }
+
+  .search-bar {
+      width: 100%;
+      max-width: 15rem;
+      padding: 10px 20px;
+      border-radius: 40px;
+      border: none;
+      font-size: 16px;
+      transition: 0.6s all ease-in-out;
+      margin: 10px auto;
+      display: block;
+  }
+
+  .seccion-gamer,
+  .seccion-muebles {
+      padding: 10px;
+      margin-top: 70px; /* Añadido: Espacio para evitar superposición */
+      
+  }
+
+  h1, h2, h3 {
+      font-size: 6vw;
+      text-align: center;
+  }
+
+  .producto {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .logo1 {
+      width: 50px;
+      height: 50px;
+  }
+
+  h1, h2, h3 {
+      font-size: 32px;
+      text-align: center;
+  }
+}

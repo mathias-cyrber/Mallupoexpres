@@ -1,37 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>vuelvelo a menear</title>
-    <link rel="stylesheet" href="estilo.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mallupo Express</title>
+  <link rel="shortcut icon" href="imagenes/ME.png" type="image/x-icon">
+  <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
 
-<h1 class="meneador">¿Quires ver un gato meneando la cabesa?</h1>
+<header class="nav">
+  <a href="#" class="logo">
+    <img class="logo1" src="imagenes/mallupo.png" alt="Logo Mallupo">
+  </a>
 
-<div class="botones">
-    <button  onclick="mostrarImagen('si')">Sí</button>
-    
-    <button onclick="mostrarImagen('no')">No</button>
-</div>
+  <div class="container">
+    <input type="text" class="search-bar" placeholder="Busca en Mallupo Express...">
+  </div>
 
-<div id="imagen-container"></div>
+  <nav class="nav-links">
+    <ul>
+      <li><a href="#inicio">Hogar</a></li>
+      <li><a href="#acerca">Acerca de</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#contacto">Contactos</a></li>
+    </ul>
+  </nav>
+</header>
 
-<button id="reiniciar" onclick="reiniciar()">Reiniciar</button>
+<section class="banner-descuento">
+  <h1>¡Descuentos del 50% solo por hoy, ¡aprovéchalo ya!¡</h1>
+</section>
 
-<div class="espacio">
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-</div>
+<main>
+  <section class="seccion-gamer" id="gamer">
+    <h1 class="seccion-gamer1">Sección Gamer</h1>
+
+    <div class="producto">
+      <img src="imagenes/pc.jpg" alt="PC Gamer">
+      <h2>Un PC capaz de correr cualquier juego</h2>
+    </div>
+
+    <div class="producto">
+      <img src="imagenes/muase.jpg" alt="Mouse Gamer">
+      <h2>Un mouse que soporta hasta más de 300 clics por segundo</h2>
+    </div>
+
+    <div class="producto">
+      <img src="imagenes/auricular.jpg" alt="Auriculares Gamer">
+      <h2>Auriculares con cancelación de sonido y bajos potentes</h2>
+    </div>
+
+    <div class="producto">
+      <img src="imagenes/monitor.jpg" alt="Monitor Gamer 4K">
+      <h2>Un monitor HD 4K que corre juegos a más de 60fps</h2>
+    </div>
+  </section>
+
+  <section class="seccion-muebles" id="muebles">
+    <h1 class="seccion-muebles1">Sección de Muebles</h1>
+
+    <div class="producto">
+      <img src="imagenes/gabinete.jpg" alt="Gabinete de almacenamiento">
+      <h2>Gabinete para guardar todas tus cosas</h2>
+    </div>
+
+    <div class="producto">
+      <img src="imagenes/sofa.jpg" alt="Sofá cómodo">
+      <h2>Sofá extremadamente cómodo</h2>
+    </div>
+
+    <div class="producto">
+      <img src="imagenes/mesita.jpg" alt="Mesita de sala">
+      <h2>Mesita ideal para la sala de estar</h2>
+    </div>
+
+    <div class="producto">
+      <img src="imagenes/armario.jpg" alt="Armario amplio">
+      <h2>Armario espacioso para toda tu ropa</h2>
+    </div>
+  </section>
+</main>
+
+<footer id="contacto">
+  <p>Contacto: info@mallupoexpress.com</p>
+</footer>
 
 <script src="main.js"></script>
-
 </body>
 </html>
