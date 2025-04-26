@@ -1,0 +1,101 @@
+body{
+    background: #3E5151;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'poppiins';
+    margin: 0;
+    padding: 0;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #242323;
+    column-rule: #ffff;
+    padding: 0 1rem;
+
+}
+
+.logo{
+    color: #f0ac45;
+    text-decoration: none;
+
+}
+
+.logo span{
+    color: #fff;
+}
+
+.nav ul{
+    display: flex;
+    list-style-type: none;
+}
+.nav ul li{
+    margin: 0 10px;
+    padding: 0 10px;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 26px;
+    transition: all ease .4s;
+}
+
+.nav ul li a:Hover{
+    color: #f0ac45;
+
+}
+
+.logo1{
+    width: 70px;
+    height: 70px;
+}
+
+.conatiner{
+    position: relative;
+    width: 240px;
+}
+
+.search-bar{
+    position: relative;
+    cursor: pointer;
+    margin: 10px 20px;
+    width: 100%;
+    padding: 10px 10px 10px 20px;
+    border-radius: 40px;
+    border: none;
+    font-size: 14px;
+    transition: 0.6s all ease-in-out;
+}
+
+.search-bar:focus-visible{
+    outline: none;
+    box-shadow: 0px 0px 6px 6px #fdae36;
+    display: grid;
+    place-items: center;
+}
+
+.seccion-gamer{
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    background-color:#2423237a;
+    display: grid;
+    place-items: left;
+}
+
+.seccion-gamer1{
+    display: grid;
+    place-content: center;
+}
+
+.seccion-muebles{
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    background-color: #2423237a;
+    display: grid;
+    place-items: left;
+}
+
+.seccion-muebles1{
+    display: grid;
+    place-content: center;
+}
