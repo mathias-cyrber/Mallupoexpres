@@ -16,3 +16,9 @@ searchBar.addEventListener('keypress', function(event) {
   }
 });
 
+const navToggle = document.querySelector('.nav-toggle');  // Botón
+const navLinks = document.querySelector('.nav-links');    // Menú
+
+navToggle.addEventListener('click', function() {
+    navLinks.classList.toggle('active');  // Alternar la clase 'active'
+});
