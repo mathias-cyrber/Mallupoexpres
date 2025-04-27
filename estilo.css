@@ -79,7 +79,8 @@ body {
 }
 
 .seccion-gamer,
-.seccion-muebles {
+.seccion-muebles,
+.seccion-televisiones {
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
   background-color: #2423237a;
   display: grid;
@@ -90,7 +91,8 @@ body {
 }
 
 .seccion-gamer1,
-.seccion-muebles1 {
+.seccion-muebles1,
+.seccion-televisiones1 {
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
@@ -196,7 +198,8 @@ img {
     }
 
   .seccion-gamer,
-  .seccion-muebles {
+  .seccion-muebles,
+  .seccion-televisiones {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -220,9 +223,9 @@ img {
     padding: 10px;
     margin: 10px;
     background-color: #fff;
-    display: inline-block; /* Cambiado a inline-block */
-    width: calc(50% - 20px); /* Dos productos por fila con espacio */
-    vertical-align: top; /* Alinea la parte superior de los productos */
+    display: inline-block;
+    width: calc(50% - 20px);
+    vertical-align: top;
   }
 
   .producto h2 {
