@@ -1,119 +1,231 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
+ <html lang="es">
+ <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mallupo Express</title>
   <link rel="shortcut icon" href="imagenes/ME.png" type="image/x-icon">
   <link rel="stylesheet" href="estilo.css">
-</head>
-<body>
-
-<header class="nav">
+  <script src="https://kit.fontawesome.com/9c9eb6b5db.js" crossorigin="anonymous"></script>
+ </head>
+ <body>
+ 
+ <header class="nav">
   <a href="#" class="logo">
-    <img class="logo1" src="imagenes/mallupo.png" alt="Logo Mallupo">
+   <img class="logo1" src="imagenes/mallupo.png" alt="Logo Mallupo">
   </a>
-
-  <button class="nav-toggle">  <span></span>
-    <span></span>
-    <span></span>
+ 
+  <button class="nav-toggle">
+   <span></span>
+   <span></span>
+   <span></span>
   </button>
-
+ 
   <div class="container">
-    <input type="text" class="search-bar" placeholder="Busca en Mallupo Express...">
+   <input type="text" class="search-bar" placeholder="Busca en Mallupo Express...">
   </div>
-
-  <nav class="nav-links">  <ul>
-      <li><a href="#inicio">Hogar</a></li>
-      <li><a href="#acerca">Acerca de</a></li>
-      <li><a href="#servicios">Servicios</a></li>
-      <li><a href="#contacto">Contactos</a></li>
-    </ul>
+ 
+  <nav class="nav-links">
+   <ul>
+    <li><a href="#inicio">Hogar</a></li>
+    <li><a href="#acerca">Acerca de</a></li>
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#contacto">Contactos</a></li>
+   </ul>
   </nav>
-</header>
-
-<section class="banner-descuento">
+ 
+  <div class="carrito-icon">
+   <i class="fas fa-shopping-cart"></i>
+   <span class="carrito-cantidad">0</span>  </div>
+ </header>
+ 
+ <section class="banner-descuento">
   <h1>¡Descuentos del 50% solo por hoy, ¡aprovéchalo ya!¡</h1>
-</section>
-
-<main>
+ </section>
+ 
+ <main>
   <section class="seccion-gamer" id="gamer">
-    <h1 class="seccion-gamer1">Sección Gamer</h1>
-
+   <h1 class="seccion-gamer1">Sección Gamer</h1>
+   <div class="producto-container">
     <div class="producto">
-      <img src="imagenes/pc.jpg" alt="PC Gamer">
-      <h2>Un PC capaz de correr cualquier juego</h2>
+     <img src="imagenes/pc.jpg" alt="PC Gamer">
+     <h2>Un PC capaz de correr cualquier juego</h2>
+     <p class="precio">$1000</p>
     </div>
-
+   </div>
+ 
+   <div class="producto-container">
     <div class="producto">
-      <img src="imagenes/muase.jpg" alt="Mouse Gamer">
-      <h2>Un mouse que soporta hasta más de 300 clics por segundo</h2>
+     <img src="imagenes/muase.jpg" alt="Mouse Gamer">
+     <h2>Un mouse que soporta hasta más de 300 clics por segundo</h2>
+     <p class="precio">$50</p>
     </div>
-
+   </div>
+ 
+   <div class="producto-container">
     <div class="producto">
-      <img src="imagenes/auricular.jpg" alt="Auriculares Gamer">
-      <h2>Auriculares con cancelación de sonido y bajos potentes</h2>
+     <img src="imagenes/auricular.jpg" alt="Auriculares Gamer">
+     <h2>Auriculares con cancelación de sonido y bajos potentes</h2>
+     <p class="precio">$120</p>
     </div>
-
+   </div>
+ 
+   <div class="producto-container">
     <div class="producto">
-      <img src="imagenes/monitor.jpg" alt="Monitor Gamer 4K">
-      <h2>Un monitor HD 4K que corre juegos a más de 60fps</h2>
+     <img src="imagenes/monitor.jpg" alt="Monitor Gamer 4K">
+     <h2>Un monitor HD 4K que corre juegos a más de 60fps</h2>
+     <p class="precio">$400</p>
     </div>
+   </div>
   </section>
-
+ 
+ 
   <section class="seccion-muebles" id="muebles">
-    <h1 class="seccion-muebles1">Sección de Muebles</h1>
-
+   <h1 class="seccion-muebles1">Sección de Muebles</h1>
+ 
+   <div class="producto-container">
     <div class="producto">
-      <img src="imagenes/gabinete.jpg" alt="Gabinete de almacenamiento">
-      <h2>Gabinete para guardar todas tus cosas</h2>
+     <img src="imagenes/gabinete.jpg" alt="Gabinete de almacenamiento">
+     <h2>Gabinete para guardar todas tus cosas</h2>
+     <p class="precio">$250</p>
     </div>
-
+   </div>
+ 
+   <div class="producto-container">
     <div class="producto">
-      <img src="imagenes/sofa.jpg" alt="Sofá cómodo">
-      <h2>Sofá extremadamente cómodo</h2>
+     <img src="imagenes/sofa.jpg" alt="Sofá cómodo">
+     <h2>Sofá extremadamente cómodo</h2>
+     <p class="precio">$600</p>
     </div>
-
+   </div>
+ 
+   <div class="producto-container">
     <div class="producto">
-      <img src="imagenes/mesita.jpg" alt="Mesita de sala">
-      <h2>Mesita ideal para la sala de estar</h2>
+     <img src="imagenes/mesita.jpg" alt="Mesita de sala">
+     <h2>Mesita ideal para la sala de estar</h2>
+     <p class="precio">$150</p>
     </div>
-
+   </div>
+ 
+   <div class="producto-container">
     <div class="producto">
-      <img src="imagenes/armario.jpg" alt="Armario amplio">
-      <h2>Armario espacioso para toda tu ropa</h2>
+     <img src="imagenes/armario.jpg" alt="Armario amplio">
+     <h2>Armario espacioso para toda tu ropa</h2>
+     <p class="precio">$500</p>
     </div>
+   </div>
   </section>
-
+ 
+ 
   <section class="seccion-televisiones" id="televisiones">
-    <h1 class="seccion-televisiones1">Sección de Televisiones</h1>
-
+   <h1 class="seccion-televisiones1">Sección de Televisiones</h1>
+ 
+   <div class="producto-container">
     <div class="producto">
-      <img src="imagenes/tele de pared.jpg"Televisión 4K">
-      <h2>Televisión de pared</h2>
+     <img src="imagenes/tele de pared.jpg" alt="Televisión 4K">
+     <h2>Televisión de pared</h2>
+     <p class="precio">$800</p>
     </div>
-
+   </div>
+ 
+   <div class="producto-container">
     <div class="producto">
-      <img src="imagenes/tele samsung.jpg" alt="Smart TV">
-      <h2>Smart TV de samsung</h2>
+     <img src="imagenes/tele samsung.jpg" alt="Smart TV">
+     <h2>Smart TV de samsung</h2>
+     <p class="precio">$1200</p>
     </div>
-
+   </div>
+ 
+   <div class="producto-container">
     <div class="producto">
-      <img src="imagenes/tele xiaomi.jpg" alt="Televisión OLED">
-      <h2>Televisión de xiaomi</h2>
+     <img src="imagenes/tele xiaomi.jpg" alt="Televisión OLED">
+     <h2>Televisión de xiaomi</h2>
+     <p class="precio">$950</p>
     </div>
-
+   </div>
+ 
+   <div class="producto-container">
     <div class="producto">
-      <img src="imagenes/television de 43 pulgada.jpg" alt="Televisión 8K">
-      <h2>Televisión de 43 pulgadas</h2>
+     <img src="imagenes/television de lg.jpg" alt="Televisión NanoCell">
+     <h2>Televisión de LG</h2>
+     <p class="precio">$1100</p>
     </div>
+   </div>
   </section>
-</main>
+ 
+ </main>
+ 
+ <footer class="footer">
+  <div class="footer-container">
+   <div class="footer-section about">
+    <a href="#" class="logo">
+     <img class="logo1" src="imagenes/mallupo.png" alt="Logo Mallupo">
+    </a>
+    <p>
+     Mallupo Express es tu tienda en línea para encontrar los mejores productos en tecnología, muebles y electrodomésticos.
+     ¡Descubre las últimas tendencias y ofertas exclusivas!
+    </p>
+    <div class="contact">
+     <span><i class="fas fa-phone"></i>  123-456-789</span>
+     <span><i class="fas fa-envelope"></i>  info@mallupoexpress.com</span>
+    </div>
+    <div class="socials">
+     <a href="#"><i class="fab fa-facebook"></i></a>
+     <a href="#"><i class="fab fa-instagram"></i></a>
+     <a href="#"><i class="fab fa-twitter"></i></a>
+     <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+   </div>
+ 
+   <div class="footer-section links">
+    <h2>Quick Links</h2>
+    <ul>
+     <li><a href="#inicio">Inicio</a></li>
+     <li><a href="#acerca">Acerca de</a></li>
+     <li><a href="#servicios">Servicios</a></li>
+     <li><a href="#contacto">Contacto</a></li>
+     <li><a href="#gamer">Gamer</a></li>
+     <li><a href="#muebles">Muebles</a></li>
+     <li><a href="#televisiones">Televisiones</a></li>
+    </ul>
+   </div>
+ 
+   <div class="footer-section contact-form">
+    <h2>Contact Us</h2>
+    <br>
+    <form action="index.html" method="post">
+     <input type="email" name="email" class="text-input contact-input" placeholder="Your email address...">
+     <textarea rows="5" name="message" class="text-input contact-input" placeholder="Your message..."></textarea>
+     <button type="submit" class="btn btn-big">
+      <i class="fas fa-envelope"></i>
+      Send
+     </button>
+    </form>
+   </div>
+  </div>
+ 
+  <div class="footer-bottom">
+   <p>
+    © Mallupo Express | Designed by <a href="https://www.youtube.com/channel/UCyv629S6jJgz872R6Yn82kg" target="_blank">Elias</a>
+   </p>
+  </div>
+ </footer>
+ 
+ <div class="carrito-modal">
+  <div class="carrito-contenido">
+   <span class="carrito-cerrar">×</span>
+   <h2>Tu Carrito de Compras</h2>
+   <div class="carrito-items">
+    </div>
+   <div class="carrito-total">
+    Total: $<span class="total-precio">0.00</span>
+   </div>
+   <button class="carrito-comprar">Comprar</button>
+  </div>
+ </div>
 
-<footer id="contacto">
-  <p>Contacto: info@mallupoexpress.com</p>
-</footer>
-
-<script src="main.js"></script>
-</body>
-</html>
+ 
+ 
+ <script src="main.js"></script>
+ </body>
+ </html>

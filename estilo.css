@@ -4,11 +4,13 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-}
-
-.nav {
+  color: #333;
+ }
+ 
+ .nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: #242323;
   padding: 0 1rem;
   position: fixed;
@@ -16,232 +18,435 @@ body {
   left: 0;
   width: 100%;
   z-index: 100;
-}
-
-.logo {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .logo {
   color: #f0ac45;
   text-decoration: none;
-}
-
-.logo span {
+  display: flex;
+  align-items: center;
+ }
+ 
+ .logo span {
   color: #fff;
-}
-
-.nav ul {
+  margin-left: 0.5rem;
+ }
+ 
+ .nav ul {
   display: flex;
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
-
-.nav ul li {
+ }
+ 
+ .nav ul li {
   margin: 0 10px;
   padding: 0 10px;
-}
-
-.nav ul li a {
+ }
+ 
+ .nav ul li a {
   text-decoration: none;
   color: #fff;
-  font-size: 26px;
+  font-size: 1.1rem;
   transition: all ease 0.4s;
-}
-
-.nav ul li a:hover {
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+ }
+ 
+ .nav ul li a:hover {
   color: #f0ac45;
-}
-
-.logo1 {
+  background-color: rgba(255, 255, 255, 0.1);
+ }
+ 
+ .logo1 {
   width: 70px;
   height: 70px;
-}
-
-.container {
-  width: 90%;
-  margin: auto;
-  display: flex;
-  align-items: center;
-}
-
-.search-bar {
-  width: 20rem;
-  padding: 10px 10px 10px 20px;
-  border-radius: 40px;
-  border: none;
-  font-size: 14px;
-  transition: 0.6s all ease-in-out;
-  margin: 10px 0;
-  cursor: pointer;
-}
-
-.search-bar:focus-visible {
-  outline: none;
-  box-shadow: 0px 0px 6px 6px #fdae36;
-}
-
-.seccion-gamer,
-.seccion-muebles,
-.seccion-televisiones {
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-  background-color: #2423237a;
-  display: grid;
-  place-items: start;
-  padding: 20px;
-  margin-bottom: 20px;
-  margin-top: 80px;
-}
-
-.seccion-gamer1,
-.seccion-muebles1,
-.seccion-televisiones1 {
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  text-align: center !important;
-  width: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
-  min-height: 50px;
+ }
+ 
+ .container {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-img {
+  padding: 0 1rem;
+ }
+ 
+ .search-bar {
   width: 100%;
-  max-width: 400px;
+  max-width: 20rem;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  border: none;
+  font-size: 1rem;
+  transition: 0.3s;
+  margin-right: 1rem;
+ }
+ 
+ .search-bar:focus {
+  outline: none;
+  box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.2);
+ }
+ 
+ .nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+ }
+ 
+ .nav-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+  transition: all 0.4s ease-in-out;
+ }
+ 
+ .nav-links {
+  display: flex;
+ }
+ 
+ .nav-links.active {
+  display: flex;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #242323;
+  flex-direction: column;
+  align-items: center;
+  z-index: 100;
+ }
+ 
+ .banner-descuento {
+  background-color: #f0ac45;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 4.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+ }
+ 
+ main {
+  padding: 20px;
+ }
+ 
+ .seccion-gamer,
+ .seccion-muebles,
+ .seccion-televisiones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .seccion-gamer1,
+ .seccion-muebles1,
+ .seccion-televisiones1 {
+  flex-basis: 100%;
+  margin-bottom: 1rem;
+  color: #242323;
+  border-bottom: 2px solid #f0ac45;
+  padding-bottom: 0.5rem;
+ }
+ 
+ .producto-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+ }
+ 
+ .producto {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin: 0.5rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  transition: transform 0.2s;
+  width: calc(50% - 1rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+ }
+ 
+ .producto:hover {
+  transform: scale(1.05);
+ }
+ 
+ .producto img {
+  max-width: 100%;
   height: auto;
   display: block;
-}
-
-.nav-toggle {
-    display: none;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-}
-
-.nav-toggle span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 5px 0;
-    transition: all 0.3s ease-in-out;
-}
-
-.nav-links {
-    display: flex;
-}
-
-@media (max-width: 768px) {
-  h1, h2, h3 {
-      font-size: 4.5vw;
-  }
-
-  .nav-toggle {
-      display: block;
-  }
-
-  .nav-links {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      text-align: center;
-      background-color: #242323;
-      position: absolute;
-      top: 100%;
-      left: 0;
-  }
-
-  .nav-links.active {
-      display: flex;
-  }
-
-  .nav ul {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .nav ul li {
-      margin: 8px 0;
-      padding: 6px 0;
-      width: 100%;
-  }
-
-  .nav ul li a {
-      font-size: 16px;
-      display: block;
-      padding: 8px 0;
-  }
-
-  .container {
-      width: 95%;
-      margin: auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-  }
-
-  .search-bar {
-      width: 100%;
-      max-width: 15rem;
-      padding: 8px 16px;
-      border-radius: 40px;
-      border: none;
-      font-size: 14px;
-      transition: 0.6s all ease-in-out;
-      margin: 8px auto;
-      display: block;
-    }
-
-  .seccion-gamer,
-  .seccion-muebles,
-  .seccion-televisiones {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    margin: 15px 0;
-    padding: 8px;
-    margin-bottom: 15px;
-    margin-top: 20px;
-    flex-direction: column; /* Apilar en lugar de fila */
-  }
-
-  img {
-    max-width: 80%; /* Aumentar el tamaño de la imagen en celular */
-    height: auto;
-    display: block;
-    margin: 10px auto; /* Espacio arriba y abajo de la imagen */
-  }
-
-  .producto {
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    margin: 10px 0; /* Espacio solo arriba y abajo */
-    background-color: #fff;
-    width: 90%; /* Ancho más grande en celular */
-    display: block; /* Asegurar que ocupe el ancho */
-  }
-
-  .producto h2 {
-    font-size: 4vw;
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-
-  h1, h2, h3 {
-      font-size: 28px;
-      text-align: center;
-    }
-}
-
-.banner-descuento {
-  padding: 8px;
+  margin-bottom: 0.5rem;
+  border-radius: 0.3rem;
+ }
+ 
+ .producto h2 {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #242323;
+ }
+ 
+ .producto p.precio {
+  color: #f0ac45;
+  font-weight: bold;
+  margin-top: 0.5rem;
+ }
+ 
+ .footer {
+  background-color: #242323;
+  color: #fff;
+  padding: 2rem 0;
+  margin-top: 2rem;
+ }
+ 
+ .footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+ }
+ 
+ .footer-section {
+  margin-bottom: 2rem;
+ }
+ 
+ .about {
+  flex: 1 1 20rem;
+ }
+ 
+ .about p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+ }
+ 
+ .contact span {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+ }
+ 
+ .socials a {
+  border: 1px solid white;
+  width: 35px;
+  height: 35px;
+  padding-top: 5px;
+  margin-right: 5px;
   text-align: center;
-  font-size: 4vw;
-}
+  display: inline-block;
+  font-size: 1.3rem;
+  border-radius: 50%;
+  transition: all 0.3s;
+ }
+ 
+ .socials a:hover {
+  color: #f0ac45;
+  border-color: #f0ac45;
+ }
+ 
+ .links h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+ }
+ 
+ .links ul {
+  list-style: none;
+  padding: 0;
+ }
+ 
+ .links a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s;
+ }
+ 
+ .links a:hover {
+  color: #f0ac45;
+ }
+ 
+ .contact-form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+ }
+ 
+ .text-input {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  border: 1px solid #555;
+  background: #333;
+  color: #fff;
+  border-radius: 0.3rem;
+ }
+ 
+ .contact-input {
+  font-size: 1rem;
+ }
+ 
+ .btn {
+  padding: 0.5rem 1rem;
+  background: #f0ac45;
+  color: white;
+  border: none;
+ }
+ 
+ .agregar-carrito {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  transition: background-color 0.3s;
+ }
+ 
+ .agregar-carrito:hover {
+  background-color: #3e8e41;
+ }
+ 
+ .carrito-icon {
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-left: 1rem;
+  position: relative;
+  padding: 0.5rem;
+ }
+ 
+ .carrito-cantidad {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #f0ac45;
+  color: #fff;
+  border-radius: 50%;
+  padding: 0.2rem 0.4rem;
+  font-size: 0.8rem;
+ }
+ 
+ .carrito-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+ }
+ 
+ .carrito-contenido {
+  background-color: #fefefe;
+  position: fixed; /* Cambiar a fixed */
+  top: 15%;
+  left: 5%; /* Posición desde la izquierda */
+  transform: translateX(0); /* Ajuste fino si es necesario */
+  padding: 1rem;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+ }
+ 
+ .carrito-cerrar {
+  color: #aaa;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+ }
+ 
+ .carrito-items {
+  margin-bottom: 1rem;
+  max-height: 300px; /* O ajusta este valor según necesites */
+  overflow-y: auto;   /* Agrega la barra de desplazamiento vertical cuando sea necesario */
+ }
+ 
+ .carrito-items div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+ }
+ 
+ .carrito-total {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+ }
+ 
+ .carrito-comprar {
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  font-size: 1.1rem;
+  transition: background-color 0.3s;
+ }
+ 
+ .carrito-comprar:hover {
+  background-color: #3e8e41;
+ }
+ 
+ /* --- Media Query para Pantallas Pequeñas --- */
+ @media (max-width: 768px) {
+  .nav-links {
+   display: none;
+   position: absolute;
+   top: 100%;
+   left: 0;
+   width: 100%;
+   background-color: #242323;
+   flex-direction: column;
+   align-items: center;
+   z-index: 100;
+  }
+ 
+  .nav-links.active {
+   display: flex; /* Muestra el menú cuando está activo */
+  }
+ 
+  .nav-toggle {
+   display: block;
+   background: none;
+   border: none;
+   cursor: pointer;
+   padding: 0.5rem;
+  }
+ 
+  .nav-toggle span {
+   display: block;
+   width: 25px;
+   height: 3px;
+   background-color: #fff;
+   margin: 5px 0;
+   transition: all 0.4s ease-in-out;
+  }
+ }
