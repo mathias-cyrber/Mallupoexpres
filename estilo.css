@@ -209,27 +209,27 @@ img {
     padding: 8px;
     margin-bottom: 15px;
     margin-top: 20px;
+    flex-direction: column; /* Apilar en lugar de fila */
   }
 
   img {
-    max-width: 60%;
+    max-width: 80%; /* Aumentar el tamaño de la imagen en celular */
     height: auto;
     display: block;
-    margin: 0 auto;
+    margin: 10px auto; /* Espacio arriba y abajo de la imagen */
   }
 
   .producto {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     padding: 10px;
-    margin: 10px;
+    margin: 10px 0; /* Espacio solo arriba y abajo */
     background-color: #fff;
-    display: inline-block;
-    width: calc(50% - 20px);
-    vertical-align: top;
+    width: 90%; /* Ancho más grande en celular */
+    display: block; /* Asegurar que ocupe el ancho */
   }
 
   .producto h2 {
-    font-size: 3.5vw;
+    font-size: 4vw;
     margin-top: 5px;
     margin-bottom: 5px;
   }
